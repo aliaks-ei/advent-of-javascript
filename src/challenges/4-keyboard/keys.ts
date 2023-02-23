@@ -1,0 +1,70 @@
+type Key = {
+  name: string;
+  isSpecial?: boolean;
+};
+
+const keyboardKeysByRows: Key[][] = [
+  [
+    { name: "`" },
+    { name: "1" },
+    { name: "2" },
+    { name: "3" },
+    { name: "4" },
+    { name: "5" },
+    { name: "6" },
+    { name: "7" },
+    { name: "8" },
+    { name: "9" },
+    { name: "0" },
+    { name: "-" },
+    { name: "=" },
+    { name: "Del", isSpecial: true },
+  ],
+  [
+    { name: "Tab", isSpecial: true },
+    { name: "q" },
+    { name: "w" },
+    { name: "e" },
+    { name: "r" },
+    { name: "t" },
+    { name: "y" },
+    { name: "u" },
+    { name: "i" },
+    { name: "o" },
+    { name: "p" },
+    { name: "[" },
+    { name: "]" },
+    { name: "\\" },
+  ],
+  [
+    { name: "Caps", isSpecial: true },
+    { name: "a" },
+    { name: "s" },
+    { name: "d" },
+    { name: "f" },
+    { name: "g" },
+    { name: "h" },
+    { name: "j" },
+    { name: "k" },
+    { name: "l" },
+    { name: ";" },
+    { name: "'" },
+    { name: "Enter", isSpecial: true },
+  ],
+  [
+    { name: "Shift", isSpecial: true },
+    { name: "z" },
+    { name: "x" },
+    { name: "c" },
+    { name: "v" },
+    { name: "b" },
+    { name: "n" },
+    { name: "m" },
+    { name: "," },
+    { name: "." },
+    { name: "/" },
+    { name: "Shift", isSpecial: true },
+  ],
+];
+
+export default keyboardKeysByRows;

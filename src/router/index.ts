@@ -21,6 +21,11 @@ const router = createRouter({
       name: "piano",
       component: () => import("@/challenges/3-piano/Piano.vue"),
     },
+    {
+      path: "/keyboard",
+      name: "keyboard",
+      component: () => import("@/challenges/4-keyboard/ComputerKeyboard.vue"),
+    },
   ],
 });
 
