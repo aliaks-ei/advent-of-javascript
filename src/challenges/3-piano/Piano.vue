@@ -12,8 +12,12 @@
         v-for="(whiteKeyPath, whiteKeyIdx) in whiteKeyPaths"
         :key="`white-key-${whiteKeyIdx}`"
         :d="whiteKeyPath"
-        class="fill-white cursor-pointer hover:fill-pink-600"
+        class="fill-white cursor-pointer hover:fill-pink-600 focus:fill-pink-600 outline-none"
+        tabindex="0"
+        role="button"
         @click="handleKeyClick(whiteKeyIdx + 1)"
+        @keyup.enter="handleKeyClick(whiteKeyIdx + 1)"
+        @keyup.space="handleKeyClick(whiteKeyIdx + 1)"
       />
 
       <!-- black keys -->
@@ -21,8 +25,12 @@
         v-for="(blackKeyPath, blackKeyIdx) in blackKeyPaths"
         :key="`black-key-${blackKeyIdx}`"
         :d="blackKeyPath"
-        class="fill-black cursor-pointer hover:fill-amber-300"
+        tabindex="0"
+        role="button"
+        class="fill-black cursor-pointer hover:fill-amber-300 focus:fill-amber-300 outline-none"
         @click="handleKeyClick(whiteKeyPaths.length + blackKeyIdx + 1)"
+        @keyup.enter="handleKeyClick(whiteKeyPaths.length + blackKeyIdx + 1)"
+        @keyup.space="handleKeyClick(whiteKeyPaths.length + blackKeyIdx + 1)"
       />
     </svg>
   </section>

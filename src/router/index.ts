@@ -26,6 +26,11 @@ const router = createRouter({
       name: "keyboard",
       component: () => import("@/challenges/4-keyboard/ComputerKeyboard.vue"),
     },
+    {
+      path: "/faq",
+      name: "faq",
+      component: () => import("@/challenges/11-FAQ/FAQsWrapper.vue"),
+    },
   ],
 });
 

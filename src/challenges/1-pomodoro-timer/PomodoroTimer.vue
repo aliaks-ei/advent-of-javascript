@@ -18,7 +18,7 @@
         class="timer relative flex flex-col items-center justify-center rounded-full text-white"
       >
         <div class="timer__time flex items-center mt-8 mb-5 leading-none">
-          <div class="timer__minutes">
+          <label class="timer__minutes">
             <input
               ref="inputField"
               v-model="minutes"
@@ -26,18 +26,20 @@
               class="timer__input border-b-2 border-dashed bg-transparent text-white text-center leading-none disabled:border-0"
               type="text"
               name="minutes"
+              aria-label="minutes"
             />
-          </div>
+          </label>
           <div class="timer__colon">:</div>
-          <div class="timer__seconds">
+          <label class="timer__seconds">
             <input
               v-model="seconds"
               :disabled="!isSettingsMode"
               class="timer__input border-b-2 border-dashed bg-transparent text-white text-center leading-none disabled:border-0"
               type="text"
               name="seconds"
+              aria-label="seconds"
             />
-          </div>
+          </label>
         </div>
 
         <button
