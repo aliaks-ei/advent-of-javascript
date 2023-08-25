@@ -29,7 +29,7 @@ const router = createRouter({
     {
       path: "/faq",
       name: "faq",
-      component: () => import("@/challenges/11-FAQ/FAQSection.vue"),
+      component: () => import("@/challenges/11-FAQ/FAQsWrapper.vue"),
     },
   ],
 });

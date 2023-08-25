@@ -8,6 +8,7 @@ module.exports = {
     "eslint:recommended",
     "@vue/eslint-config-typescript",
     "@vue/eslint-config-prettier",
+    "plugin:vuejs-accessibility/recommended",
   ],
   parserOptions: {
     ecmaVersion: "latest",
@@ -17,6 +18,15 @@ module.exports = {
       "error",
       {
         ignores: ["Piano"],
+      },
+    ],
+    "vuejs-accessibility/label-has-for": [
+      "error",
+      {
+        required: {
+          some: ["nesting", "id"],
+        },
+        true: false,
       },
     ],
   },
