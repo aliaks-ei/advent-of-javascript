@@ -8,3 +8,4 @@ This project contains a Pomodoro timer that works the following way:
 - once the timer finishes, the ring changes from green to red and an alert message is passed to the browser.
 
 ### UI appearance
+<img width="631" alt="image" src="https://github.com/aliaks-ei/advent-of-javascript/assets/46219241/324985c4-d8f3-40b3-9cdd-54ac244a7408">
