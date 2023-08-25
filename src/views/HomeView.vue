@@ -27,5 +27,6 @@ const challengeLinks: ChallengeLinks[] = [
   { routeName: "pomodoro", title: "1 - Pomodoro timer" },
   { routeName: "piano", title: "3 - Piano" },
   { routeName: "keyboard", title: "4 - Keyboard (Eyes on screen)" },
+  { routeName: "faq", title: "11 - FAQ" },
 ];
 </script>
